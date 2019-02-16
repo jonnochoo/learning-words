@@ -7,39 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning Words</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        html,
-        body,
-        #app {
-            height: 100%;
-            font-family: Roboto;
-            background-color: forestgreen;
-        }
-
-        .word {
-            height: 100%;
-            color: White;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .word span {
-            font-size: 650px;
-            margin-top: 0;
-        }
-
-        [v-cloak] {
-            display: none
-        }
-    </style>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
@@ -78,15 +46,13 @@
         function getRandom(array, previous) {
             var newItem;
             do {
-                const randomNumber = randomIntFromInterval(0, array.length - 1);
+                const min = 0;
+                const max = array.length - 1;
+                const randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
                 newItem = array[randomNumber];
             }
             while (previous === newItem);
             return newItem;
-        }
-        function randomIntFromInterval(min, max) // min and max included
-        {
-            return Math.floor(Math.random() * (max - min + 1) + min);
         }
 
     </script>

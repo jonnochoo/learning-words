@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    font-family: Roboto;
+    background-color: forestgreen;
+}
+
+.word {
+    height: 100%;
+    color: White;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.word span {
+    font-size: 650px;
+    margin-top: 0;
+}
+
+[v-cloak] {
+    display: none
+}

@@ -22,8 +22,19 @@ body,
 }
 
 .word span {
-    font-size: 650px;
     margin-top: 0;
+}
+@media screen and (max-width : 450px)
+{
+    .word span {
+        font-size: 200px;
+    }
+}
+@media screen and (max-width : 850px) and (min-width : 450px)
+{
+    .word span {
+        font-size: 300px;
+    }
 }
 
 [v-cloak] {

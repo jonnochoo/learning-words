@@ -1,14 +1,16 @@
-var backgroundColors = ['rgb(0, 159, 251)', 'rgb(234, 86, 107)', 'rgb(84, 43, 0)', 'rgb(84, 43, 0)', 'forestgreen'];
 var phrases = ['sh', 'oo', 'ch', 'ing', 'to', 'the', 'a', 'ee', 'ow', 'th', 'me', 'we', 'cat', 'dog',
     'tr', 'ay', 'at', 'it', 'i', 'ot'
 ];
+
 var app = new Vue({
     el: '#app',
     data: {
-        word: 'sh'
+        word: ''
     },
     mounted: function () {
         var vm = this;
+        this.setBackgroundToRandomColor();
+        this.word = getRandom(phrases, this.word);
         window.addEventListener('keyup', function (event) {
             if (event.keyCode == 32) {
                 vm.refresh();
@@ -17,8 +19,11 @@ var app = new Vue({
     },
     methods: {
         refresh() {
-            document.getElementById("app").style.backgroundColor = getRandom(backgroundColors, document.getElementById("app").style.backgroundColor);
             this.word = getRandom(phrases, this.word);
+            this.setBackgroundToRandomColor();
+        },
+        setBackgroundToRandomColor() {
+            document.getElementById("app").style.backgroundColor = randomColor();
         }
     }
 })

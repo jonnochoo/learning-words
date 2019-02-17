@@ -23,7 +23,9 @@ var app = new Vue({
             this.setBackgroundToRandomColor();
         },
         setBackgroundToRandomColor() {
-            document.getElementById("app").style.backgroundColor = randomColor();
+            document.getElementById("app").style.backgroundColor = randomColor({
+                luminosity: 'dark'
+            });
         }
     }
 })

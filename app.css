@@ -23,6 +23,7 @@ body,
 
 .word span {
     margin-top: 0;
+    font-size: 650px;
 }
 @media screen and (max-width : 450px)
 {

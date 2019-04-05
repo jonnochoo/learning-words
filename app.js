@@ -1,16 +1,31 @@
-var phrases = ['sh', 'oo', 'ch', 'ing', 'to', 'the', 'a', 'ee', 'ow', 'th', 'me', 'we', 'cat', 'dog',
-    'tr', 'ay', 'at', 'it', 'i', 'ot'
-];
-
+var library = 
+[
+    {
+        name: "ing",
+        phrases: ['ring', 'thing', 'king', 'wing', 'sing', 'ping','bring','swing','string']
+    },
+    {
+        name: "at",
+        phrases: ['cat', 'dog', 'hat', 'sat', 'mat', 'rat', 'pat', 'bat', 'fat']
+    },
+    {
+        name: "random",
+        phrases: ['cat', 'dog', 'hat', 'sat', 'mat', 'rat', 'me', 'he', 'we', 'see', 'tree', 'bee']
+    }
+]
 var app = new Vue({
     el: '#app',
     data: {
-        word: ''
+        word: '',
+        phrases: library[0].phrases
     },
     mounted: function () {
-        var vm = this;
+        var vm = this
+        var name= window.location.search.replace('?name=','');
+        var set = library.find(x => x.name == name);
+        this.phrases = set ? set.phrases : this.phrases;
         this.setBackgroundToRandomColor();
-        this.word = getRandom(phrases, this.word);
+        this.word = getRandom(this.phrases, this.word);
         window.addEventListener('keyup', function (event) {
             if (event.keyCode == 32) {
                 vm.refresh();
@@ -19,7 +34,7 @@ var app = new Vue({
     },
     methods: {
         refresh() {
-            this.word = getRandom(phrases, this.word);
+            this.word = getRandom(this.phrases, this.word);
             this.setBackgroundToRandomColor();
         },
         setBackgroundToRandomColor() {

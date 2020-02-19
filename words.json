@@ -1,0 +1,106 @@
+[
+  {
+    "name": "magic-100-gold",
+    "phrases": [
+      "a",
+      "and",
+      "be",
+      "I",
+      "in",
+      "is",
+      "it",
+      "of",
+      "that",
+      "the",
+      "to",
+      "was"
+    ]
+  },
+  {
+    "name": "magic-100-red",
+    "phrases": [
+      "all",
+      "as",
+      "are",
+      "at",
+      "but",
+      "for",
+      "had",
+      "have",
+      "her",
+      "his",
+      "not",
+      "on",
+      "one",
+      "said",
+      "so",
+      "they",
+      "we",
+      "with",
+      "you"
+    ]
+  },
+  {
+    "name": "magic-100-blue",
+    "phrases": ["an", "by", "do", "go", "if", "me", "my", "no", "or", "up"]
+  },
+  {
+    "name": "magic-100-green",
+    "phrases": [
+      "big",
+      "can",
+      "did",
+      "get",
+      "has",
+      "him",
+      "new",
+      "now",
+      "off",
+      "old",
+      "our",
+      "out",
+      "see",
+      "she",
+      "two",
+      "who"
+    ]
+  },
+  {
+    "name": "magic-100-orange",
+    "phrases": [
+      "back",
+      "been",
+      "came",
+      "down",
+      "from",
+      "into",
+      "just",
+      "like",
+      "made",
+      "much",
+      "over",
+      "them",
+      "this",
+      "well",
+      "went",
+      "when"
+    ]
+  },
+  {
+    "name": "magic-100-indigo",
+    "phrases": [
+      "all",
+      "come",
+      "here",
+      "make",
+      "must",
+      "only",
+      "some",
+      "then",
+      "were",
+      "what",
+      "will",
+      "your"
+    ]
+  }
+]

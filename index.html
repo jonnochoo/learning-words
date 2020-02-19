@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Words</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
-</head>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
-<body>
-    <div id="app"  v-on:click="refresh()" v-cloak>
-        <div class="word">
-            <span>{{word}}</span>
-        </div>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="bg-blue-400">
+    <div class="text-center p-20">
+      <h1 class="text-4xl text-white mb-10">Magic Words</h1>
+
+      <div
+        class="flex items-center bg-gray-300 text-gray-800 text-sm font-bold px-4 py-3"
+        role="alert"
+      >
+        <a href="/words/?name=magic-words-100-gold">Magic Words 100 - Gold</a>
+      </div>
+
+      <div
+        class="flex items-center bg-gray-300 text-gray-800 text-sm font-bold px-4 py-3"
+        role="alert"
+      >
+        <a href="/words/?name=magic-words-100-red">Magic Words 100 - Red</a>
+      </div>
+
+      <div
+        class="flex items-center bg-gray-300 text-gray-800 text-sm font-bold px-4 py-3"
+        role="alert"
+      >
+        <a href="/words/?name=magic-words-100-blue">Magic Words 100 - Blue</a>
+      </div>
+
+      <div
+        class="flex items-center bg-gray-300 text-gray-800 text-sm font-bold px-4 py-3"
+        role="alert"
+      >
+        <a href="/words/?name=magic-words-100-green">Magic Words 100 - Green</a>
+      </div>
+
+      <div
+        class="flex items-center bg-gray-300 text-gray-800 text-sm font-bold px-4 py-3"
+        role="alert"
+      >
+        <a href="/words/?name=magic-words-100-orange"
+          >Magic Words 100 - Orange</a
+        >
+      </div>
+
+      <div
+        class="flex items-center bg-gray-300 text-gray-800 text-sm font-bold px-4 py-3"
+        role="alert"
+      >
+        <a href="/words/?name=magic-words-100-indigo"
+          >Magic Words 100 - indigo</a
+        >
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
-    <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
